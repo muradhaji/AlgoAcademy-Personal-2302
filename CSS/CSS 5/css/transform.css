@@ -1,0 +1,80 @@
+div.parent {
+  width: 600px;
+  height: 600px;
+  background-color: lightgray;
+}
+
+div.parent > div {
+  width: 300px;
+  height: 100px;
+}
+
+.child1 {
+  background-color: darkcyan;
+
+  /* transform: translateX(-100px); */
+  /* transform: translateY(-50px); */
+  /* transform: translate(50px, 50px); */
+  /* transform: translate(-50%, -50%); */
+
+  /* position: relative; */
+  /* top: 50%; */
+  /* left: 50%; */
+
+  /* translate: 50% 50%; */
+  /* translate: 50%; */
+}
+.child2 {
+  background-color: orangered;
+
+  /* deg - degree */
+  /* transform: rotate(-405deg); */
+  /* rad - radian */
+  /* transform: rotate(3.14159rad); */
+  /* turn */
+  /* transform: rotate(0.125turn); */
+  /* transform: rotateZ(45deg); */
+
+  /* transform-origin: center center; */
+  /* transform-origin: left; */
+  /* transform-origin: right bottom; */
+  /* transform-origin: 290px 90px; */
+  /* transform-origin: 90% 90%; */
+  /* rotate: 45deg; */
+}
+.child3 {
+  background-color: violet;
+
+  /* transform: scaleX(2); */
+  /* transform: scaleY(1.5); */
+  /* transform: scale(2, 2); */
+  /* transform: scale(200%, 200%); */
+  /* transform: scale(50%, 50%); */
+  /* transform: scale(0.5, 0.5); */
+
+  /* scale: 2 3; */
+  /* scale: 2; */
+  /* scale: 200%; */
+  /* scale: 0.5; */
+
+  /* transform-origin: 50px 50px; */
+  /* scale: 200%; */
+}
+
+.child4 {
+  background-color: crimson;
+
+  /* transform: skewX(20deg); */
+  /* transform: skewY(20deg); */
+  /* transform: skew(20deg, 20deg); */
+
+  /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+  /* transform: scale(2, 2) translate(75px, 25px) skew(30deg, 30deg) rotate(-30deg); */
+
+  /* transform-origin: 100% 100%; */
+  /* transform: skewX(0deg); */
+}
+
+.child3:hover {
+  /* transform: skew(20deg, 20deg); */
+}

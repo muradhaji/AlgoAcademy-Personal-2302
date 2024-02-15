@@ -1,0 +1,40 @@
+section#learnMore {
+  background-image: url(../images/mac.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 48px;
+  font-size: 18px;
+  height: calc(100vh - 51px);
+  position: relative;
+  filter: grayscale(0.5);
+}
+section#learnMore > h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+section#learnMore > p {
+}
+section#learnMore > a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+  padding: 12px 24px;
+  display: inline-block;
+}
+section#learnMore > a:hover {
+  opacity: 1;
+}
+section#learnMore > div.icons {
+  position: absolute;
+  left: 48px;
+  bottom: 24px;
+}
+section#learnMore > div.icons > i {
+  color: gray;
+}
+section#learnMore > div.icons > i:hover {
+  opacity: 0.7;
+}

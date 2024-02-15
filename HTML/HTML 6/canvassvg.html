@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    svg {
+      fill: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="30" stroke="blue" stroke-width="2" fill="red" />
+  </svg>
+
+  <img class="mysvg" src="test.svg" alt="" style="width: 100%;">
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+
+    ctx.moveTo(200, 0);
+    ctx.lineTo(0, 100);
+    ctx.stroke();
+  </script>
+
+</body>
+
+</html>

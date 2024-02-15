@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 600px;
+  /* perspective-origin: top left; */
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+
+  animation-name: rotating3d;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotating3d {
+  from {
+    /* transform: rotateY(0deg); */
+    transform: rotate3d(5, 1, 1, 0deg);
+  }
+  to {
+    /* transform: rotateY(360deg); */
+    transform: rotate3d(5, 1, 1, 360deg);
+  }
+}
+
+.side {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  font-size: 32px;
+  line-height: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  position: absolute;
+}
+
+.front {
+  background-color: rgba(255, 0, 0, 0.5);
+  transform: rotateY(0deg) translateZ(100px);
+}
+.back {
+  background-color: rgba(0, 128, 0, 0.5);
+  transform: rotateY(180deg) translateZ(100px);
+}
+.left {
+  background-color: rgba(0, 139, 139, 0.5);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.right {
+  background-color: rgba(255, 255, 0, 0.5);
+  transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+  background-color: rgba(0, 0, 255, 0.5);
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  background-color: rgba(238, 130, 238, 0.5);
+  transform: rotateX(-90deg) translateZ(100px);
+}

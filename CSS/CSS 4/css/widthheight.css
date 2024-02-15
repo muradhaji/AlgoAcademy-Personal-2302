@@ -1,0 +1,44 @@
+div {
+  /* border: 2px solid green;
+  width: 700px;
+  margin: auto; */
+}
+
+div.d2 {
+  /* width: 100%; */
+  /* max-width: 100%; */
+}
+
+img {
+  /* max-width: 100%; */
+}
+
+div {
+  /* background-color: darkcyan; */
+
+  /* width: 500px;
+  height: 150px; */
+
+  /* inline-size: 500px; */
+  /* block-size: 150px; */
+
+  /* writing-mode: vertical-rl; */
+}
+
+div.outline {
+  /* width: 200px;
+  height: 100px;
+  background-color: red;
+  padding: 40px;
+  border: 40px solid green;
+  margin: 100px;
+
+  outline: 40px solid blue;
+  outline-offset: 40px;
+
+  border-radius: 0px 16px; */
+}
+
+input:focus-visible {
+  outline: none;
+}

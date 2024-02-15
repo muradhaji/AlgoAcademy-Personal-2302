@@ -1,0 +1,35 @@
+/* #myHeader {
+  color: blue;
+} */
+
+h1.heading {
+  background-color: green;
+}
+
+h1.bigheading {
+  background-color: yellow;
+}
+
+h1.heading.bigheading {
+  color: violet;
+}
+
+.heading.bigheading {
+  color: orange;
+}
+
+.bigheading {
+  color: cornflowerblue !important;
+}
+
+.heading {
+  color: green !important;
+}
+
+h1 {
+  color: red;
+}
+
+* {
+  background-color: aqua;
+}

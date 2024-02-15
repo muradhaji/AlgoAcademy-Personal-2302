@@ -1,0 +1,54 @@
+div.parent {
+  /* width: 500px;
+  height: 500px;
+  background-color: green; */
+}
+
+div.child1 {
+  /* width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white; */
+}
+
+div.child2 {
+  /* width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white; */
+}
+
+div.parent {
+  /* position: relative; */
+}
+
+div.child1 {
+  /* position: fixed; */
+  /* top: 50px; */
+  /* left: 50px; */
+  /* right: 50px; */
+  /* bottom: 50px; */
+}
+
+body {
+  width: 4000px;
+}
+
+h1.inline {
+  width: 300px;
+  display: inline-block;
+}
+
+h1.sticky {
+  background-color: red;
+  color: white;
+
+  position: sticky;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+
+  width: 300px;
+  display: inline-block;
+}

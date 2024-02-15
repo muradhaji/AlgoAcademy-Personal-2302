@@ -1,0 +1,22 @@
+:root {
+  --darkBlueColor: #2d3250;
+  --mediumCreamColor: #f6b17a;
+  --headingPadding: 24px 48px;
+}
+
+div.container {
+  --blueColor: #2a3da7;
+}
+
+div.container > h1 {
+  color: var(--blueColor);
+}
+
+body {
+  /* background-color: #f6b17a;
+  color: #2d3250; */
+  background-color: var(--mediumCreamColor);
+  color: var(--blueColor);
+  color: var(--darkBlueColor);
+  padding: var(--headingPadding);
+}

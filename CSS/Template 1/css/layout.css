@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+aside {
+  margin-top: 34px;
+
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 250px;
+}
+main {
+  margin-top: 34px;
+  margin-left: 250px;
+}
+footer {
+  margin-left: 250px;
+}
+
+@media (max-width: 1000px) {
+  main, footer {
+    margin-left: 0px;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  main > article {
+    flex-direction: column;
+  }
+}

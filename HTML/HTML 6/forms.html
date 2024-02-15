@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form action="" id="myForm">
+
+    <h1>This is a form</h1>
+
+    <!-- <textarea name="message" placeholder="Enter your message" rows="15" cols="30" style="font-family: 'Courier New', Courier, monospace;"></textarea> -->
+
+    <textarea name="message" placeholder="Enter your message" style="resize: none; width: 300px; height: 200px;"
+      minlength="10" maxlength="100" id="myTextArea"></textarea>
+    <br><span id="counter">100 / 100</span>
+
+    <br><br>
+
+    <label for="favcarselect" id="datalistLabel" style="display: none;">Select your favorite car</label><br>
+    <input type="text" name="fav_cars" list="car_list" placeholder="Select your favorite car" id="favcarselect">
+
+    <datalist id="car_list">
+      <option value="Mercedes"></option>
+      <option value="Mazda"></option>
+      <option value="Ford"></option>
+      <option value="BMW"></option>
+    </datalist>
+
+    <br><br>
+
+    <!-- <fieldset>
+      <legend>Something</legend>
+      <input type="text"><br>
+      <input type="text"><br>
+      <input type="text"><br>
+      <input type="text"><br>
+    </fieldset> -->
+
+    <input type="submit">
+    <input type="reset">
+    <br><br>
+
+    <input type="submit" value="Submit in new tab" formtarget="_blank">
+    <input type="submit" value="Submit in current tab">
+    <br><br>
+
+    <input type="submit" value="Submit without validate" formnovalidate>
+    <input type="submit" value="Submit with validate">
+    <br><br>
+
+    <input type="submit" value="Submit in current page" formaction="">
+    <input type="submit" value="Submit to W3Schools" formaction="https://www.w3schools.com/action_page.php">
+    <br><br>
+
+    <input type="submit" value="Submit with Post method" formaction="https://www.w3schools.com/action_page.php"
+      formmethod="post">
+    <input type="submit" value="Submit with Get method" formaction="https://www.w3schools.com/action_page.php"
+      formmethod="get">
+    <br><br>
+
+  </form>
+
+  <input type="submit" value="Button out of form" form="myForm">
+
+  <script>
+    var textArea = document.getElementById("myTextArea");
+    var counter = document.getElementById("counter");
+    var form = document.getElementById('myForm');
+
+    // textArea.onchange = () => {
+    //   counter.innerHTML = `${100 - textArea.value.length} / 100`;
+    // }
+
+    // textArea.addEventListener("input", () => {
+    //   counter.innerHTML = `${100 - textArea.value.length} / 100`;
+    // })
+
+    textArea.oninput = () => {
+      counter.innerHTML = `${100 - textArea.value.length} / 100`;
+    }
+
+    form.onreset = () => {
+      counter.innerHTML = `100 / 100`;
+    }
+
+    document.getElementById("favcarselect").onfocus = () => {
+      document.getElementById("datalistLabel").style.display = "inline"
+      document.getElementById("favcarselect").setAttribute("placeholder", "")
+    }
+
+    document.getElementById("favcarselect").onblur = () => {
+      document.getElementById("datalistLabel").style.display = "none"
+      document.getElementById("favcarselect").setAttribute("placeholder", "Select your favorite car")
+    }
+
+  </script>
+
+</body>
+
+</html>

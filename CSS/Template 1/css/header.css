@@ -1,0 +1,15 @@
+header {
+  background-color: black;
+}
+header > nav.horNav {
+  display: flex;
+}
+header > nav.horNav > a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: white;
+}
+header > nav.horNav > a:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,75 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+nav {
+  background-color: lightgreen;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  background-color: khaki;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 24px;
+}
+
+/* Layout Settings */
+
+body {
+  display: grid;
+  grid-template-areas:
+    'HE HE HE'
+    'NA MA RE'
+    'FO FO FO';
+  grid-template-columns: 20% 60% 20%;
+}
+
+header {
+  grid-area: HE;
+}
+nav {
+  grid-area: NA;
+}
+main {
+  grid-area: MA;
+}
+footer {
+  grid-area: FO;
+}
+div {
+  grid-area: RE;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-areas:
+      'HE HE'
+      'NA MA'
+      'RE RE'
+      'FO FO';
+    grid-template-columns: 30% 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-areas:
+      'HE'
+      'NA'
+      'MA'
+      'RE'
+      'FO';
+    grid-template-columns: 100%;
+  }
+}

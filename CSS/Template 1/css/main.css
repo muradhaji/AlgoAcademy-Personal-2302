@@ -1,0 +1,50 @@
+main {
+  padding: 36px 16px;
+}
+
+/* Article */
+
+main > article {
+  display: flex;
+  margin-bottom: 64px;
+  gap: 32px;
+}
+main > article > div.text {
+  flex: 7;
+}
+main > article > div.text > h1 {
+  color: #009688;
+}
+main > article > div.text > p {
+}
+main > article > div.ads {
+  flex: 3;
+}
+main > article > div.ads > div {
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+main > article > div.ads > div.smallAd {
+  padding: 32px 16px;
+  margin-bottom: 16px;
+}
+main > article > div.ads > div.bigAd {
+  padding: 64px 16px;
+}
+
+/* Pages Navigation */
+
+main > nav.pagesNav {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+main > nav.pagesNav > a {
+  text-decoration: none;
+  padding: 10px 16px;
+  color: black;
+}
+main > nav.pagesNav > a:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,16 @@
+span {
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  display: inline-block;
+}

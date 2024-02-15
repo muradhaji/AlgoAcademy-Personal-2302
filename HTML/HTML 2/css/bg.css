@@ -1,0 +1,11 @@
+body {
+  color: white;
+  /* background-image: url(../horizontal.png); */
+  /* background-image: url(../vertical.png); */
+  background-image: url(../testbg.avif);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

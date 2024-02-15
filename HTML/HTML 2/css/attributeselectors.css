@@ -1,0 +1,63 @@
+/* h1[clas] {
+  color: red;
+} */
+
+/* .asd[style] {
+  color: red;
+} */
+
+/* h1[class='main'] {
+  color: red;
+} */
+
+/* h1[class='main-header'] {
+  color: red;
+} */
+
+/* h1[class~='main'] {
+  color: red;
+} */
+
+/* h1[class~='header'] {
+  color: red;
+} */
+
+/* h1[class|='main'] {
+  color: red;
+} */
+
+/* h1[class^='main'] {
+  color: red;
+} */
+
+/* h1[class$='main'] {
+  color: red;
+} */
+
+/* h1[class*='ea'] {
+  color: red;
+} */
+
+/* * {
+  padding: 40px;
+} */
+
+/* h1,
+p {
+  color: red;
+} */
+
+
+p {
+  background-color: cadetblue;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  display: none;
+  /* visibility: hidden; */
+}
+
+h1:hover + p {
+  display: block;
+  /* visibility: visible; */
+}

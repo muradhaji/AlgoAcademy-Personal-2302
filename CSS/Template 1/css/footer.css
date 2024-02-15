@@ -1,0 +1,17 @@
+footer {
+}
+footer > p {
+  color: white;
+  margin: 0;
+}
+footer > p.top {
+  background-color: #666666;
+  padding: 32px 16px;
+}
+footer > p.bottom {
+  background-color: #333333;
+  padding: 16px;
+}
+footer > p.bottom > a {
+  color: white;
+}

@@ -1,0 +1,45 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+nav {
+  background-color: lightgreen;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  background-color: khaki;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 24px;
+}
+
+/* Layout Settings */
+
+section {
+  display: flex;
+}
+
+nav {
+  flex: 3;
+}
+
+main {
+  flex: 7;
+}
+
+@media (max-width: 400px) {
+  section {
+    flex-direction: column;
+  }
+}

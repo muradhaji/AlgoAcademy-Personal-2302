@@ -1,0 +1,52 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+nav {
+  background-color: lightgreen;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  background-color: khaki;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 24px;
+}
+
+/* Layout Settings */
+
+nav {
+  width: 30%;
+}
+
+main {
+  width: 70%;
+}
+
+nav, main {
+  box-sizing: border-box;
+  float: left;
+  height: 300px;
+}
+
+footer {
+  clear: both;
+}
+
+@media (max-width: 350px) {
+  nav, main {
+    width: 100%;
+    height: auto;
+  }
+}

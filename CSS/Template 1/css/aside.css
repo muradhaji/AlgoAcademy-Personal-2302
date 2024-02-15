@@ -1,0 +1,20 @@
+aside {
+  background-color: #f0f0f0;
+  /* width: 250px; */
+}
+aside > h3 {
+  padding: 0px 16px;
+}
+aside > nav.verNav {
+  display: flex;
+  flex-direction: column;
+}
+aside > nav.verNav > a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: black;
+}
+aside > nav.verNav > a:hover {
+  background-color: black;
+  color: white;
+}
