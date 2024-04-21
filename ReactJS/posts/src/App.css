@@ -1,13 +1,14 @@
 main {
   display: flex;
   flex-direction: column;
+  padding: 16px;
+  gap: 16px;
 }
 
 main > aside {
   width: 100%;
 }
 main > div.routeHolder {
-  padding: 16px;
   flex: 1;
 }
 
