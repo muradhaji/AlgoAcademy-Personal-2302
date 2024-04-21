@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > aside {
+  width: 100%;
+}
+main > div.routeHolder {
+  padding: 16px;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+  main > aside {
+    width: 200px;
+  }
+}
