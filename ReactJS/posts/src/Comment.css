@@ -1,0 +1,10 @@
+div.comment {
+  padding: 8px;
+  background-color: white;
+}
+div.comment > div.name {
+}
+div.comment > div.email {
+}
+div.comment > div.body {
+}

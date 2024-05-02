@@ -1,0 +1,13 @@
+div.postDetails {
+  background-color: #f1f1f1;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+div.postDetails > div.buttons {
+}
+div.postDetails > div.details {
+}
+div.postDetails > div.comments {
+}
