@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import Post from './Post';
 import Spinner from './Spinner';
-import MyContext from './MyContext';
+import MyContext from '../MyContext';
 
 function Posts() {
   let [postList, setPostList] = useState([]);

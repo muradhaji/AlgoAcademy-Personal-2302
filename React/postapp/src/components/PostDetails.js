@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Comment from './Comment';
 import Spinner from './Spinner';
 import { isEmpty } from 'lodash';
-import './PostDetails.css';
+import '../css/PostDetails.css';
 
 function PostDetails() {
   let [currentPost, setCurrentPost] = useState();

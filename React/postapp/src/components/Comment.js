@@ -1,4 +1,4 @@
-import './Comment.css';
+import '../css/Comment.css';
 
 function comment(props) {
   const { data } = props;

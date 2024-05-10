@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Aside.css';
+import '../css/Aside.css';
 
 function Aside(props) {
   const { collapsed = true } = props;
